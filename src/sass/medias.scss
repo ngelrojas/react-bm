@@ -1,0 +1,36 @@
+$width-name: max-device-width;
+$target-width: 360px;
+
+@media screen and ($width-name : $target-width) {
+  nav{
+    .brand-logo{
+        left: 11%!important;
+        width: 30%;
+        margin-top: 1%; 
+    }
+    .sidenav-trigger{
+        float: right!important;
+        margin: 0px!important; 
+    } 
+  }
+  .nav-wrapper{
+    .input-field{
+        input[type=search]{
+            margin-top: 8%;
+            padding-left: 0.5rem!important;
+            width: 100%!important; 
+        }
+        .label-icon{
+            display:none; 
+        }
+        .search-i-close{
+            margin-top: -14px!important;
+            right: 0.5rem!important; 
+        } 
+    }
+    .dropdown-width{
+        text-align: center; 
+    } 
+  }
+ 
+}

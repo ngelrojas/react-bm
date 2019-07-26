@@ -1,0 +1,13 @@
+# step one
+> npm install materialize-css@next
+
+# step two
+
+import M from 'materialize-css'
+
+# step three
+# in document index.html insert this code
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+# or import javascript
+import 'materialize-css/dist/css/materialize.min.css'

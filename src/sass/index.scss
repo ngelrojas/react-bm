@@ -1,0 +1,57 @@
+@import 'medias.scss';
+$global-font: 'Roboto Mono';
+$search-label-fsize: 19px;
+
+@mixin wrapper-center($width){
+    width: $width;
+    margin: auto;
+}
+@mixin logo-main($radius, $border, $colorb, $width){
+    border-radius: $radius;
+    border: $border solid $colorb;
+    width: $width;
+    margin: auto;
+    margin-top: 2%;
+}
+
+@mixin search-wrapper($width, $position, $left, $right, $top){
+    width: $width;
+    position: $position;
+    margin-left: $left;
+    margin-right: $right;
+    margin-top: $top;
+}
+
+@mixin search-input($height, $pleft, $bradius, $width){
+    height: $height;
+    padding-left: $pleft;
+    border-radius: $bradius;
+    width: $width!important;
+}
+
+@mixin search-i-close($mtop, $fsize){
+    margin-top: $mtop;
+    font-size: $fsize;
+}
+
+html{
+    body{
+        font-family: $global-font; 
+    }
+}
+.wrapper-center{ @include wrapper-center(90%); }
+
+// logo main
+.logo-main{ @include logo-main(50%, 2px, #ffffff, 45%); }
+
+// search box
+.search-wrapper{ @include search-wrapper(50%, fixed, 15%, 10%, 1%); }
+
+// search input
+.search-input{ @include search-input(30px!important, 0.5rem!important, 20px!important, 100%); }
+
+// search label close
+.search-i-close{ @include search-i-close(-2%, $search-label-fsize!important); }
+
+// width
+.dropdown-width{width:100%!important; left:0%!important;}
