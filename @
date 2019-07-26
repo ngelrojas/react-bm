@@ -1,0 +1,24 @@
+import React from 'react';
+import { CSSTransitionGroup, Transition } from 'react-transition-group';
+
+
+class Home extends React.Component
+{
+    render(){
+        return (
+            <div>
+                <Transition timeout=300 
+                    transitionName="example"
+                    transitionAppear={true}
+                    transitionEnter={false}
+                    transitionLeave={false}>
+
+                    <h1>home</h1>
+                 
+                </Transition> 
+            </div>
+        ); 
+    }
+}
+
+export default Home;
