@@ -9,6 +9,13 @@ import NotFound from './pages/notfound.jsx';
 import logo from '../src/img/ar_new.png';
 import M from 'materialize-css';
 
+import posed, { PoseGroup } from 'react-pose';
+
+
+const RouterContainer = posed.div({
+    enter: { opacity:1, delay: 300, beforeChildren: true },
+    exit: { opacity: 0 }
+});
 
 class MainComponent extends React.Component
 {
@@ -29,7 +36,7 @@ class MainComponent extends React.Component
 
     render(){
         return(
-            <Router>
+            <Router render={({ location })}>
                 <nav className="red darken-4">
                     <div className="nav-wrapper wrapper-center">
                         <Link className="brand-logo"to="/"><img className="logo-main" src={logo} alt="ngel rojas" /></Link>
@@ -66,14 +73,18 @@ class MainComponent extends React.Component
                         <Link to="/contact-me">Contact Me</Link>
                     </li>
                 </ul>
-                <Switch>
-                    <Route exact path="/" component={Home}></Route>
-                    <Route path="/blog" component={Blog}></Route>
-                    <Route path="/tutorials" component={Tutorials}></Route>
-                    <Route path="/about-me" component={About}></Route>
-                    <Route path="/contact-me" component={Contact}></Route>
-                    <Route component={NotFound}></Route>
-                </Switch>
+                <PoseGroup>
+                    <RouterContainer key={location.pathname}>
+                        <Switch localtion={location}>
+                            <Route exact path="/" component={Home}></Route>
+                            <Route path="/blog" component={Blog}></Route>
+                            <Route path="/tutorials" component={Tutorials}></Route>
+                            <Route path="/about-me" component={About}></Route>
+                            <Route path="/contact-me" component={Contact}></Route>
+                            <Route component={NotFound}></Route>
+                        </Switch> 
+                    </RouterContainer>
+                </PoseGroup>
             </Router>
         ); 
     }

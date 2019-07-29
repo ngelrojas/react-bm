@@ -7,4 +7,7 @@ import 'materialize-css/dist/css/materialize.min.css';
 import MainComponent from '../components/main.jsx';
 
 
-ReactDOM.render(<MainComponent />, document.getElementById('root'));
+ReactDOM.render(
+    <MainComponent />, 
+    document.getElementById('root')
+);

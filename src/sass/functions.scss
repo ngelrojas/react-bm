@@ -1,0 +1,39 @@
+// function and vars
+
+@mixin general-font(){
+    font-family: 'Roboto Mono';
+}
+
+@mixin wrapper-center($width){
+    width: $width;
+    margin: auto;
+}
+@mixin logo-main($radius, $border, $colorb, $width){
+    border-radius: $radius;
+    border: $border solid $colorb;
+    width: $width;
+    margin: auto;
+    margin-top: 2%;
+}
+
+@mixin search-wrapper($width, $position, $left, $right, $top){
+    width: $width;
+    position: $position;
+    margin-left: $left;
+    margin-right: $right;
+    margin-top: $top;
+}
+
+@mixin search-input($height, $pleft, $bradius, $width){
+    height: $height;
+    padding-left: $pleft;
+    border-radius: $bradius;
+    width: $width;
+}
+
+@mixin search-i-close($mtop, $fsize, $right, $top){
+    margin-top: $mtop;
+    font-size: $fsize;
+    right: $right;
+    top: $top;
+}

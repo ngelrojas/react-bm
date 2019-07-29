@@ -1,7 +1,11 @@
-$width-name: max-device-width;
-$target-width: 360px;
+// it's less than or equal 600px 
+// this media query working
+@import 'functions.scss';
+$max-width: max-width;
+$min-width: min-width;
+$mobile-width: 600px;
 
-@media screen and ($width-name : $target-width) {
+@media screen and ($max-width : $mobile-width) {
   nav{
     .brand-logo{
         left: 11%!important;
@@ -14,6 +18,7 @@ $target-width: 360px;
     } 
   }
   .nav-wrapper{
+    .search-wrapper{ @include search-wrapper(60%, fixed, 11%, 0%, 0%); }
     .input-field{
         input[type=search]{
             margin-top: 8%;
@@ -24,8 +29,7 @@ $target-width: 360px;
             display:none; 
         }
         .search-i-close{
-            margin-top: -14px!important;
-            right: 0.5rem!important; 
+            @include search-i-close(-14px, 19px, 0.5rem!important, -1px!important) 
         } 
     }
     .dropdown-width{
@@ -34,3 +38,27 @@ $target-width: 360px;
   }
  
 }
+
+// it's less than or equal 992px
+// this media query working
+
+$table-width: 992px;
+
+@media screen and ($max-width: $table-width){
+
+}
+
+// it's less than or equal 993px 
+// this media query working
+
+$notebook-width: 993px;
+
+@media screen and ($min-width: $notebook-width){
+
+}
+
+// it's less than or equal 1200px
+// this media query working
+
+// $big-screen-width: 1200px;
+
