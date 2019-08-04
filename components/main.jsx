@@ -36,7 +36,7 @@ class MainComponent extends React.Component
 
     render(){
         return(
-            <Router render={({ location })}>
+            <Router>
                 <nav className="red darken-4">
                     <div className="nav-wrapper wrapper-center">
                         <Link className="brand-logo"to="/"><img className="logo-main" src={logo} alt="ngel rojas" /></Link>
@@ -73,18 +73,16 @@ class MainComponent extends React.Component
                         <Link to="/contact-me">Contact Me</Link>
                     </li>
                 </ul>
-                <PoseGroup>
-                    <RouterContainer key={location.pathname}>
-                        <Switch localtion={location}>
-                            <Route exact path="/" component={Home}></Route>
-                            <Route path="/blog" component={Blog}></Route>
-                            <Route path="/tutorials" component={Tutorials}></Route>
-                            <Route path="/about-me" component={About}></Route>
-                            <Route path="/contact-me" component={Contact}></Route>
-                            <Route component={NotFound}></Route>
-                        </Switch> 
-                    </RouterContainer>
-                </PoseGroup>
+                
+                <Switch>
+                    <Route exact path="/" component={Home}></Route>
+                    <Route path="/blog" component={Blog}></Route>
+                    <Route path="/tutorials" component={Tutorials}></Route>
+                    <Route path="/about-me" component={About}></Route>
+                    <Route path="/contact-me" component={Contact}></Route>
+                    <Route component={NotFound}></Route>
+                </Switch> 
+                    
             </Router>
         ); 
     }
