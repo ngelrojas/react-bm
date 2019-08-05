@@ -9,13 +9,6 @@ import NotFound from './pages/notfound.jsx';
 import logo from '../src/img/ar_new.png';
 import M from 'materialize-css';
 
-import posed, { PoseGroup } from 'react-pose';
-
-
-const RouterContainer = posed.div({
-    enter: { opacity:1, delay: 300, beforeChildren: true },
-    exit: { opacity: 0 }
-});
 
 class MainComponent extends React.Component
 {
@@ -40,12 +33,12 @@ class MainComponent extends React.Component
                 <nav className="red darken-4">
                     <div className="nav-wrapper wrapper-center">
                         <Link className="brand-logo"to="/"><img className="logo-main" src={logo} alt="ngel rojas" /></Link>
-                        <Link to="#" data-target="mobile-ngel" className="sidenav-trigger"><i className="material-icons">Menu</i></Link>
+                        <Link to="#" data-target="mobile-ngel" className="sidenav-trigger"><i className="material-icons">menu</i></Link>
                         <div className="search-wrapper">
                             <form className="col s6">
                                 <div className="input-field">
                                     <input id="search" className="search-input" type="search" placeholder="search" required />
-                                        <i className="material-icons search-i-close">x</i>
+                                        <i className="material-icons search-i-close">close</i>
                                 </div>
                             </form>
                         </div>
@@ -83,7 +76,7 @@ class MainComponent extends React.Component
                     <Route component={NotFound}></Route>
                 </Switch> 
                     
-            </Router>
+            </Router> 
         ); 
     }
 }

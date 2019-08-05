@@ -23,3 +23,23 @@ html{
 
 // width
 .dropdown-width{width:100%!important; left:0%!important;}
+
+// txt link post
+.txt-link-post{
+    text-decoration: none;
+    color: #4e4e4e;
+}
+.card-title{
+    color: #b71c1c!important;  
+}
+
+// footer page
+.page-footer{
+    background-color: #b71c1c!important;
+    .footer-copyright{ 
+        background-color: #b71c1c!important;
+        .txt-copyright{
+            text-align: center; 
+        }
+    }
+}

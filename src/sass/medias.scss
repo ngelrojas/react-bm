@@ -29,7 +29,7 @@ $mobile-width: 600px;
             display:none; 
         }
         .search-i-close{
-            @include search-i-close(-14px, 19px, 0.5rem!important, -1px!important) 
+            @include search-i-close(-12px, 19px, 0.5rem!important, -1px!important) 
         } 
     }
     .dropdown-width{
@@ -60,5 +60,18 @@ $notebook-width: 993px;
 // it's less than or equal 1200px
 // this media query working
 
-// $big-screen-width: 1200px;
+$big-screen-width: 1200px;
+
+@media screen and ($min-width: $big-screen-width){
+   .nav-wrapper{
+    
+    .input-field{
+        
+        .search-i-close{
+            @include search-i-close(-15px, 19px, 4rem!important, -1px!important) 
+        } 
+    }
+     
+  } 
+}
 
