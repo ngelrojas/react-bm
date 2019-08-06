@@ -37,3 +37,12 @@
     right: $right;
     top: $top;
 }
+
+@mixin dropdown-content($bg, $mw){
+    background-color: $bg;
+    min-width: $mw;
+}
+
+@mixin dropdown-submenu($color){
+    color: $color;
+}

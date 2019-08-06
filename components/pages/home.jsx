@@ -1,5 +1,5 @@
 import React from 'react'
-import Articles from '../posts/articles.jsx'
+import ListArticles from '../lists.jsx'
 import Footer from '../footer.jsx'
 import Pagination from '../Pagination.jsx'
 
@@ -12,14 +12,13 @@ class Home extends React.Component
             <div className="container-main">
                 <div className="container">
                     <h1></h1>
-                    <Articles />
-                    <Articles />
+                    <ListArticles />
                     <Pagination />
                 </div>
                 <Footer />
             </div>
             
-        ); 
+        ) 
     }
 }
 
