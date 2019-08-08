@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 const DEFAULT_IMAGE = 'https://i.imgur.com/dJa0Hpl.jpg'
 
-const Articles = ({ cover = DEFAULT_IMAGE, path, title, excerpt }) =>{
+const Articles = ({ cover = DEFAULT_IMAGE, path, title, excerpt, category }) =>{
     return(
         <div className="col s12 m6 l4 xl4">
             <div className="card">
@@ -17,6 +17,7 @@ const Articles = ({ cover = DEFAULT_IMAGE, path, title, excerpt }) =>{
                     </Link>
                 </div>
                 <div className="card-content">
+                    <span><Link to={category}>Category: {category}</Link></span>
                     <Link to={path} className="txt-link-post">
                         <p>
                             {excerpt} 

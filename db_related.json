@@ -1,10 +1,10 @@
 {
-    "categories": [
+    "categories_related": [
         {
             "id": 1,
             "title": "short title",
             "excerpt": "this is a very simple card and atractive for this theme fake, this is a very simple car and atractive for this theme fake.",
-            "cover": "https://picsum.photos/id/1010/5184/3456",
+            "cover": "https://picsum.photos/id/1/250/250",
             "path": "python/oriented-object-programming",
             "category": "python" 
         },
@@ -12,7 +12,7 @@
             "id": 2,
             "title": "thi is a little long title",
             "excerpt": "this is a very simple card and atractive for this theme fake, this is a very simple car and atractive for this theme fake.",
-            "cover": "https://picsum.photos/id/1010/5184/3456",
+            "cover": "https://picsum.photos/id/2/250/250",
             "path": "javascript/node-expressjs-mongodb",
             "category": "python" 
         },
@@ -20,7 +20,7 @@
             "id": 3,
             "title": "I think this is a long title for this post",
             "excerpt": "this is a very simple card and atractive for this theme fake, this is a very simple car and atractive for this theme fake.",
-            "cover": "https://picsum.photos/id/1010/5184/3456" ,
+            "cover": "https://picsum.photos/id/3/250/250" ,
             "path": "c/c-compilers",
             "category": "languge-c"
         },
@@ -28,7 +28,7 @@
             "id": 4,
             "title": "I think this is medium title",
             "excerpt": "this is a very simple card and atractive for this theme fake, this is a very simple car and atractive for this theme fake.",
-            "cover": "https://picsum.photos/id/1010/5184/3456" ,
+            "cover": "https://picsum.photos/id/4/250/250" ,
             "path": "erlang/elixir-programming",
             "category": "javascript"
         },
@@ -36,7 +36,7 @@
             "id": 5,
             "title": "more title",
             "excerpt": "this is a very simple card and atractive for this theme fake, this is a very simple car and atractive for this theme fake.",
-            "cover": "https://picsum.photos/id/1010/5184/3456" ,
+            "cover": "https://picsum.photos/id/5/250/250" ,
             "path": "docker/docker-swarm",
             "category": "node-js"
         },
@@ -44,7 +44,7 @@
             "id": 6,
             "title": "short title and one.",
             "excerpt": "this is a very simple card and atractive for this theme fake, this is a very simple car and atractive for this theme fake.",
-            "cover": "https://picsum.photos/id/1010/5184/3456" ,
+            "cover": "https://picsum.photos/id/6/250/250" ,
             "path": "javascript/react-oop",
             "category": "docker"
         }

@@ -1,7 +1,11 @@
 // function and vars
 
 @mixin general-font(){
-    font-family: 'Roboto Mono';
+    font-family: 'Roboto Mono', monospace;
+}
+
+@mixin general-font-h(){
+    font-family: 'Lato', sans-serif;
 }
 
 @mixin wrapper-center($width){

@@ -17,6 +17,7 @@ class MainComponent extends React.Component
         let dropDown = document.querySelectorAll('.sidenav-trigger');
         let dropsubmenu = document.querySelectorAll('.dropdown-submenu');
         var elems = document.querySelectorAll('.parallax');
+        var carousel_elem = document.querySelectorAll('.carousel'); 
 
         let options = {
             constrainWidth: false,
@@ -27,9 +28,17 @@ class MainComponent extends React.Component
             coverTrigger: false,
         };
 
+        let options_carousel = {
+            dist: 0,
+            shift: 2,
+            padding: 10,
+            noWrap: false,
+        }
+
         M.Dropdown.init(dropDown, options);
         M.Dropdown.init(dropsubmenu, options);
         M.Parallax.init(elems);
+        M.Carousel.init(carousel_elem, options_carousel);
     }
 
     render(){
