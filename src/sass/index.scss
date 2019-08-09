@@ -102,6 +102,63 @@ html{
 .related-post{
     margin-top: 4%;
     margin-bottom: 4%;
-    text-align: center; 
+    text-align: center;
+    .related{
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        .post-image{
+            margin: 0; 
+        }
+        .post-image img{
+            width: 100%;
+            vertical-align: top; 
+        }
+        .post-overlay{
+            background: rgba(0, 0, 0, .4);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            display: inline-block;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            .post-title{
+                width:100%;
+                margin: 90px 0px 0px 0px;
+                font-weight: bold;
+                text-align: center;
+                display: inline-block; 
+            } 
+        }
+        .related:hover .post-overlay{
+            display: flex; 
+        } 
+    } 
+}
+// sticky sidebar
+.wrapper{
+    display: flex;
+    justify-content: space-between; 
+    .main{
+        width: 100%;
+        height: 300vh; 
+    }
+    .sidebar{
+        width: 100%;
+        height: auto;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        .card-panel{
+            padding-left: 8%;
+            .black-text li{
+                margin-top: 2%;
+                list-style-type: circle!important; 
+            } 
+        } 
+    }
 }
 

@@ -18,7 +18,8 @@ class MainComponent extends React.Component
         let dropsubmenu = document.querySelectorAll('.dropdown-submenu');
         var elems = document.querySelectorAll('.parallax');
         var carousel_elem = document.querySelectorAll('.carousel'); 
-
+        var srollspy_el = document.querySelectorAll('.scrollspy');
+        
         let options = {
             constrainWidth: false,
             alignment: 'left',
@@ -35,10 +36,15 @@ class MainComponent extends React.Component
             noWrap: false,
         }
 
+        let options_scrollspy = {
+            activeClass: 'active', 
+        }
+
         M.Dropdown.init(dropDown, options);
         M.Dropdown.init(dropsubmenu, options);
         M.Parallax.init(elems);
         M.Carousel.init(carousel_elem, options_carousel);
+        M.ScrollSpy.init(srollspy_el, options_scrollspy);
     }
 
     render(){
